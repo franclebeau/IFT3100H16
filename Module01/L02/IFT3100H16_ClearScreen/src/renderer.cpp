@@ -89,9 +89,9 @@ void Renderer::clearToColor(int r, int g, int b)
 	{
 		hasChanged = false;
 		
-		clearColorRed   = (int) r;
-		clearColorGreen = (int) g;
-		clearColorBlue  = (int) b;
+		clearColorRed   = r;
+		clearColorGreen = g;
+		clearColorBlue  = b;
 	}
 
 	clear();
