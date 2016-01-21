@@ -1,5 +1,5 @@
 // IFT3100H16_ImageExport/main.cpp
-// Exemple d'exportation du contenu actuel de fenêtre dans un fichier image située le répertoire ./bin/data.
+// Exemple d'exportation du contenu actuel de la fenêtre d'affichage dans un fichier image située le répertoire ./bin/data.
 // L'exportation est déclanchée lorsque la barre d'espacement est relachée.
 
 #include "ofMain.h"
