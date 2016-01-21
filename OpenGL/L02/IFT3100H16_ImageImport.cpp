@@ -20,9 +20,9 @@ void IFT3100H16_ImageImport()
 	// (GLubyte = 'unsigned byte' de 8 bits donc 256 niveaux de couleur par composante)
 	GLubyte * pixels;
 
-	// ouvrir le fichier image en mode lecture et en extraire les propriétés (largeur, hauteur, espace de couleur, nombre
+	// ouvrir le fichier image en mode lecture et en extraire les propriétés (largeur, hauteur, espace de couleur, nombre de composantes de couleurs)
 
-	// Calculer le nombre total de pixels de l'image
+	// calculer le nombre total de pixels de l'image
 	imagePixelCount = imageWidth * imageHeight;
 
 	// calculer le nombre d'octets à allouer en mémoire pour contenir l'image
