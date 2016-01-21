@@ -28,7 +28,7 @@ void ofApp::windowResized(int w, int h)
 	ofLog() << "<ofApp::windowResized to: (" << w << ", " << h << ")>";
 }
 
-// fonction invoquée quand une sélection de fichiers est déposé sur la fenêtre de l'application
+// fonction invoquée quand une sélection de fichiers est déposée sur la fenêtre de l'application
 void ofApp::dragEvent(ofDragInfo dragInfo)
 {
 	ofLog() << "<ofApp::ofDragInfo file[0]: " << dragInfo.files.at(0)
