@@ -5,7 +5,7 @@
 
 #include "ofMain.h"
 
-#include "Renderer.h"
+#include "renderer.h"
 
 class ofApp : public ofBaseApp
 {
