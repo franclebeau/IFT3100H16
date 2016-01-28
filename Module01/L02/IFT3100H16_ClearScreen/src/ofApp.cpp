@@ -23,7 +23,7 @@ void ofApp::draw()
 	renderer->draw();
 }
 
-// fonction invoquée quand une touche du clavier est relâchée
+// fonction invoqu√©e quand une touche du clavier est rel√¢ch√©e
 void ofApp::keyReleased(int key)
 {
 	ofLog() << "<ofApp::keyReleased: " << key << ">";

@@ -26,7 +26,7 @@ void ofApp::draw()
 	renderer->draw();
 }
 
-// fonction invoquée quand la position du curseur change
+// fonction invoqu√©e quand la position du curseur change
 void ofApp::mouseMoved(int x, int y)
 {
 	renderer->xMouseCurrent = x;
@@ -36,7 +36,7 @@ void ofApp::mouseMoved(int x, int y)
 		ofLog() << "<ofApp::mouse move at: (" << x << ", " << y << ")>";
 }
 
-// fonction invoquée quand la position du curseur change pendant qu'un bouton de la souris est appuyé
+// fonction invoqu√©e quand la position du curseur change pendant qu'un bouton de la souris est appuy√©
 void ofApp::mouseDragged(int x, int y, int button)
 {
 	renderer->xMouseCurrent = x;
@@ -46,7 +46,7 @@ void ofApp::mouseDragged(int x, int y, int button)
 		ofLog() << "<ofApp::mouse drag at: (" << x << ", " << y << ") button:" << button <<">";
 }
 
-// fonction invoquée quand un bouton de la souris est appuyé
+// fonction invoqu√©e quand un bouton de la souris est appuy√©
 void ofApp::mousePressed(int x, int y, int button)
 {
 	renderer->isMouseButtonPressed = true;
@@ -60,7 +60,7 @@ void ofApp::mousePressed(int x, int y, int button)
 	ofLog() << "<ofApp::mouse press at: (" << x << ", " << y << ")>";
 }
 
-// fonction invoquée quand un bouton de la souris est relaché
+// fonction invoqu√©e quand un bouton de la souris est relach√©
 void ofApp::mouseReleased(int x, int y, int button)
 {
 	renderer->isMouseButtonPressed = false;
@@ -71,7 +71,7 @@ void ofApp::mouseReleased(int x, int y, int button)
 	ofLog() << "<ofApp::mouse release at: (" << x << ", " << y << ")>";
 }
 
-// fonction invoquée quand le curseur entre dans la fenêtre
+// fonction invoqu√©e quand le curseur entre dans la fen√™tre
 void ofApp::mouseEntered(int x, int y)
 {
 	renderer->xMouseCurrent = x;
@@ -80,7 +80,7 @@ void ofApp::mouseEntered(int x, int y)
 	ofLog() << "<ofApp::mouse enter at: (" << x << ", " << y << ")>";
 }
 
-// fonction invoquée quand le curseur sort dans la fenêtre
+// fonction invoqu√©e quand le curseur sort dans la fen√™tre
 void ofApp::mouseExited(int x, int y)
 {
 	renderer->xMouseCurrent = x;
@@ -89,7 +89,7 @@ void ofApp::mouseExited(int x, int y)
 	ofLog() << "<ofApp::mouse exit  at: (" << x << ", " << y << ")>";
 }
 
-// fonction invoquée quand une touche du clavier est relâchée
+// fonction invoqu√©e quand une touche du clavier est rel√¢ch√©e
 void ofApp::keyReleased(int key)
 {
 	ofLog() << "<ofApp::keyReleased: " << key << ">";

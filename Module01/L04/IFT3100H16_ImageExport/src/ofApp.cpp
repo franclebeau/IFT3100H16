@@ -27,7 +27,7 @@ void ofApp::keyReleased(int key)
 {
 	ofLog() << "<ofApp::keyReleased: " << key << ">";
 	
-	// valider si la clŽ rel‰chŽe est la barre d'espacement (space)
+	// valider si la clÃ© relÃ¢chÃ©e est la barre d'espacement (space)
 	if(key == ' ')
 		renderer->imageExport("render","png");
 }

@@ -24,3 +24,10 @@ Exemple d'exportation du contenu actuel de la fenêtre d'affichage dans un fichi
 ### Leçon #1.5
 
 Exemple d'échantillonnage dans une image chargée en mémoire pour en extraire 3 images différentes, qui sont affichées sur une rangée avec un espacement horizontal et vertical.
+
+
+### Leçon #1.6
+
+Programme qui fait une mise en page de 9 pochettes d'album dans une grille de 3x3, avec un léger espacement horizontal et vertical, par dessus une couleur d'arrière-plan dans un ton de gris très foncé.
+
+Les pochettes d'album sont importées sous forme de 9 fichiers images distincts.

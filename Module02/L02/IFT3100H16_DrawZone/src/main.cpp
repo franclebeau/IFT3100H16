@@ -1,14 +1,14 @@
 // IFT3100H16_DrawZone/main.cpp
-// Dessiner une zone de dessin en fonction de la position où un des boutons de la souris a été appuyé
+// Dessiner une zone de dessin en fonction de la position o√π un des boutons de la souris a √©t√© appuy√©
 // et de la position courante du curseur de la souris, tout en restant dans les limites du canevas.
 
 #include "ofMain.h"
 #include "ofApp.h"
 
-// point d'entrée de l'application
+// point d'entr√©e de l'application
 int main( )
 {
-	// création du contexte de rendu (OpenGL 2.1 par défaut)
+	// cr√©ation du contexte de rendu (OpenGL 2.1 par d√©faut)
 	ofSetupOpenGL(512, 512, OF_WINDOW);
 	
 	// instancier et lancer le framework (OpenFrameworks 0.9.0)

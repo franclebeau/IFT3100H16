@@ -13,4 +13,4 @@ typedef enum
 	CLEAR_MODE_GRAYSCALE,
 	CLEAR_MODE_COLOR,
 	CLEAR_MODE_RANDOM
-} EnumClearMode;
+}   EnumClearMode;

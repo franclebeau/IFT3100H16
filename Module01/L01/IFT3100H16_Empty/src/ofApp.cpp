@@ -9,7 +9,7 @@ ofApp::ofApp()
 	renderer = nullptr;
 }
 
-// fonction invoquée à l'initialisation de l'application
+// fonction invoqu√©e √† l'initialisation de l'application
 void ofApp::setup()
 {
 	ofSetWindowTitle("empty project");
@@ -20,19 +20,19 @@ void ofApp::setup()
 	ofLog() << "<ofApp::setup>";
 }
 
-// fonction invoquée lors d'une mise à jour de la logique de l'application
+// fonction invoqu√©e lors d'une mise √† jour de la logique de l'application
 void ofApp::update()
 {
 	renderer->update();
 }
 
-// fonction invoquée lors d'une mise à jour du rendu de la fenêtre de l'application
+// fonction invoqu√©e lors d'une mise √† jour du rendu de la fen√™tre de l'application
 void ofApp::draw()
 {
 	renderer->draw();
 }
 
-// fonction invoquée quand l'application quitte
+// fonction invoqu√©e quand l'application quitte
 void ofApp::exit()
 {
 	ofLog() << "<ofApp::exit>";

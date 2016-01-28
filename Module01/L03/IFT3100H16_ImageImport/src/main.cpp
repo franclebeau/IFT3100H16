@@ -1,15 +1,15 @@
 // IFT3100H16_ImageImport/main.cpp
-// Exemple d'importation et d'affichage en pleine fenêtre d'une image,
-// chargée à partir d'un fichier qui se trouve dans le répertoire ./bin/data
-// ou à partir d'une image qui est glissée-déposée sur la fenêtre de l'application.
+// Exemple d'importation et d'affichage en pleine fen√™tre d'une image,
+// charg√©e √† partir d'un fichier qui se trouve dans le r√©pertoire ./bin/data
+// ou √† partir d'une image qui est gliss√©e-d√©pos√©e sur la fen√™tre de l'application.
 
 #include "ofMain.h"
 #include "ofApp.h"
 
-// point d'entrée de l'application
+// point d'entr√©e de l'application
 int main( )
 {
-	// création du contexte de rendu (OpenGL 2.1 par défaut)
+	// cr√©ation du contexte de rendu (OpenGL 2.1 par d√©faut)
 	ofSetupOpenGL(512, 512, OF_WINDOW);
 	
 	// instancier et lancer le framework (OpenFrameworks 0.9.0)

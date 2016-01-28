@@ -28,16 +28,16 @@ void ofApp::windowResized(int w, int h)
 	ofLog() << "<ofApp::windowResized to: (" << w << ", " << h << ")>";
 }
 
-// fonction invoquée quand une sélection de fichiers est déposée sur la fenêtre de l'application
+// fonction invoqu√©e quand une s√©lection de fichiers est d√©pos√©e sur la fen√™tre de l'application
 void ofApp::dragEvent(ofDragInfo dragInfo)
 {
 	ofLog() << "<ofApp::ofDragInfo file[0]: " << dragInfo.files.at(0)
 			<< " at : " << dragInfo.position << ">";
 
-	// importer le premier fichier déposé sur la fenêtre si c'est une image (attention : aucune validation du type de fichier !)
+	// importer le premier fichier d√©pos√© sur la fen√™tre si c'est une image (attention : aucune validation du type de fichier !)
 	renderer->imageImport(dragInfo.files.at(0), renderer->image);
 
-	// redimensionner la fenêtre aux dimensions de l'image
+	// redimensionner la fen√™tre aux dimensions de l'image
 	if(renderer->image->getWidth() > 0 && renderer->image->getHeight() > 0)
 		ofSetWindowShape(renderer->image->getWidth(), renderer->image->getHeight());
 }
