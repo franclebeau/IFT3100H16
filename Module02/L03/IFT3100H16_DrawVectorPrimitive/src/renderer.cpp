@@ -126,6 +126,7 @@ void Renderer::draw()
 
 				ofFill();
 				ofSetLineWidth(0);
+				ofSetCircleResolution(48);
 				ofSetColor(
 					shape[index].fillColor[0],
 					shape[index].fillColor[1],
