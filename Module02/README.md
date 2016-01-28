@@ -2,7 +2,7 @@
 
 ## Module 2 : Dessin vectoriel
 
-### Leçon #2.2
+### Leçon #2.1
 
 Dessiner un curseur en fonction des états et des événements de la souris.
 
