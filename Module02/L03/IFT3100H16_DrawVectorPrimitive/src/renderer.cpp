@@ -11,7 +11,7 @@ void Renderer::setup()
 
 	ofSetWindowShape(512, 512);
 
-	// nombre maximale de primitives géométriques dans le tableau
+	// nombre maximale de primitives vectorielles dans le tableau
 	count = 100;
 
 	// calculer la taille de la structure générique commune à toutes les primitives vectorielles
@@ -49,9 +49,6 @@ void Renderer::setup()
 void Renderer::draw()
 {
 	ofClear(191);
-	
-	ofSetColor(191, 0, 63);
-	ofFill();
 
 	for(index = 0; index < count; ++index)
 	{
