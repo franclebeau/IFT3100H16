@@ -161,11 +161,11 @@ void Renderer::draw()
 		ofSetLineWidth(3);
 		ofNoFill();
 
-		drawRectangle(
+		drawZone(
 			xMousePress,
 			yMousePress,
-			min(max(0, xMouseCurrent), ofGetWidth()),
-			min(max(0, yMouseCurrent), ofGetHeight()));
+			xMouseCurrent,
+			yMouseCurrent);
 	}
 
 	// afficher le curseur
