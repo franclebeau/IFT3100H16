@@ -13,3 +13,7 @@ Dessiner une zone de dessin en fonction de la position où un des boutons de la 
 ### Leçon #2.3
 
 Dessiner des primitives vectorielles dans la zone de dessin (pixel, point, ligne, rectangle et ellipse) avec des couleurs aléatoires pour les lignes de contour et les zones de remplissage.
+
+### Leçon #2.4
+
+Démonstration de deux algorithmes de rastérisation de lignes (DDA & Bresenham).
