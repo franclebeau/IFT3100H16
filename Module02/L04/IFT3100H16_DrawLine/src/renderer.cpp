@@ -346,7 +346,7 @@ void Renderer::drawGrid(int cellSize) const
 		ofDrawLine(0, index * cellSize, framebufferWidth, index * cellSize);
 
 	if(isVerbose)
-		ofLog() << "<draw grid with celle size: " << cellSize << ")>";
+		ofLog() << "<draw grid with cell size: " << cellSize << ")>";
 }
 
 void Renderer::drawLine(float x1, float y1, float x2, float y2) const
