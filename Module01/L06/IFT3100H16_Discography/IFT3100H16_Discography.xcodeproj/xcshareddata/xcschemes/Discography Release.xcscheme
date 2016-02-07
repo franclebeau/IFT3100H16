@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0720"
+   LastUpgradeVersion = "0600"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,69 +15,66 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-               BuildableName = "IFT3100H16_DrawLine.app"
-               BlueprintName = "IFT3100H16_DrawLine"
-               ReferencedContainer = "container:IFT3100H16_DrawLine.xcodeproj">
+               BuildableName = "IFT3100H16_Discography.app"
+               BlueprintName = "IFT3100H16_Discography"
+               ReferencedContainer = "container:IFT3100H16_Discography.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Release"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      buildConfiguration = "Release">
       <Testables>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "IFT3100H16_DrawLine.app"
-            BlueprintName = "IFT3100H16_DrawLine"
-            ReferencedContainer = "container:IFT3100H16_DrawLine.xcodeproj">
+            BuildableName = "IFT3100H16_Discography.app"
+            BlueprintName = "IFT3100H16_Discography"
+            ReferencedContainer = "container:IFT3100H16_Discography.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Release"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Release"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
-      debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "IFT3100H16_DrawLine.app"
-            BlueprintName = "IFT3100H16_DrawLine"
-            ReferencedContainer = "container:IFT3100H16_DrawLine.xcodeproj">
+            BuildableName = "IFT3100H16_Discography.app"
+            BlueprintName = "IFT3100H16_Discography"
+            ReferencedContainer = "container:IFT3100H16_Discography.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Release"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "IFT3100H16_DrawLine.app"
-            BlueprintName = "IFT3100H16_DrawLine"
-            ReferencedContainer = "container:IFT3100H16_DrawLine.xcodeproj">
+            BuildableName = "IFT3100H16_Discography.app"
+            BlueprintName = "IFT3100H16_Discography"
+            ReferencedContainer = "container:IFT3100H16_Discography.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

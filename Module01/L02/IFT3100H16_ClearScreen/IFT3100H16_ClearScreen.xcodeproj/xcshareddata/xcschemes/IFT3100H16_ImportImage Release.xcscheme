@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
                BuildableName = "IFT3100H16_ClearScreen.temp_caseinsensitive_rename.app"
-               BlueprintName = "IFT3100H16_ClearScreen.temp_caseinsensitive_rename"
+               BlueprintName = "IFT3100H16_ClearScreen"
                ReferencedContainer = "container:IFT3100H16_ClearScreen.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -34,7 +34,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
             BuildableName = "IFT3100H16_ClearScreen.temp_caseinsensitive_rename.app"
-            BlueprintName = "IFT3100H16_ClearScreen.temp_caseinsensitive_rename"
+            BlueprintName = "IFT3100H16_ClearScreen"
             ReferencedContainer = "container:IFT3100H16_ClearScreen.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -54,7 +54,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
             BuildableName = "IFT3100H16_ClearScreen.temp_caseinsensitive_rename.app"
-            BlueprintName = "IFT3100H16_ClearScreen.temp_caseinsensitive_rename"
+            BlueprintName = "IFT3100H16_ClearScreen"
             ReferencedContainer = "container:IFT3100H16_ClearScreen.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -73,7 +73,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
             BuildableName = "IFT3100H16_ClearScreen.temp_caseinsensitive_rename.app"
-            BlueprintName = "IFT3100H16_ClearScreen.temp_caseinsensitive_rename"
+            BlueprintName = "IFT3100H16_ClearScreen"
             ReferencedContainer = "container:IFT3100H16_ClearScreen.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
