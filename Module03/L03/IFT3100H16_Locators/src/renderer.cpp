@@ -9,6 +9,8 @@ void Renderer::setup()
 {
 	ofSetFrameRate(60);
 
+	ofEnableDepthTest();
+
 	// initialisation des variables
 	speed = 100;
 
@@ -61,8 +63,8 @@ void Renderer::reset()
 	framebufferHeight = ofGetHeight();
 
 	// calculer les coordonnées du centre du framebuffer
-	xCenter = framebufferWidth  /2.0f;
-	yCenter = framebufferHeight /2.0f;
+	xCenter = framebufferWidth  / 2.0f;
+	yCenter = framebufferHeight / 2.0f;
 
 	// distribuer les localisateur dans l'espace visible de la scène
 	dispatchRandomLocator(locatorCount, min(framebufferWidth, framebufferHeight));
