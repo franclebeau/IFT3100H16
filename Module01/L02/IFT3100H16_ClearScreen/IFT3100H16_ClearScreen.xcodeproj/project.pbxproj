@@ -43,11 +43,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		304BDCB41C67D34300B0BE2F /* IFT3100H16_ClearScreenDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IFT3100H16_ClearScreenDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		306785431C3C8A9600425A1A /* primitive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = primitive.h; sourceTree = "<group>"; };
 		30DF53171C3C70120011FA54 /* renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = renderer.cpp; sourceTree = "<group>"; };
 		30DF53181C3C70120011FA54 /* renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = renderer.h; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
-		E4B69B5B0A3A1756003C02F2 /* IFT3100H16_ClearScreen.temp_caseinsensitive_renameDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IFT3100H16_ClearScreen.temp_caseinsensitive_renameDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
 		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
 		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
@@ -99,7 +99,7 @@
 				E4EEC9E9138DF44700A80321 /* openFrameworks */,
 				BB4B014C10F69532006C3DED /* addons */,
 				6948EE371B920CB800B5AC1A /* local_addons */,
-				E4B69B5B0A3A1756003C02F2 /* IFT3100H16_ClearScreen.temp_caseinsensitive_renameDebug.app */,
+				304BDCB41C67D34300B0BE2F /* IFT3100H16_ClearScreenDebug.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,9 +128,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E4B69B5A0A3A1756003C02F2 /* IFT3100H16_ClearScreen.temp_caseinsensitive_rename */ = {
+		E4B69B5A0A3A1756003C02F2 /* IFT3100H16_ClearScreen */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "IFT3100H16_ClearScreen.temp_caseinsensitive_rename" */;
+			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "IFT3100H16_ClearScreen" */;
 			buildPhases = (
 				E4B69B580A3A1756003C02F2 /* Sources */,
 				E4B69B590A3A1756003C02F2 /* Frameworks */,
@@ -142,9 +142,9 @@
 			dependencies = (
 				E4EEB9AC138B136A00A80321 /* PBXTargetDependency */,
 			);
-			name = IFT3100H16_ClearScreen.temp_caseinsensitive_rename;
+			name = IFT3100H16_ClearScreen;
 			productName = myOFApp;
-			productReference = E4B69B5B0A3A1756003C02F2 /* IFT3100H16_ClearScreen.temp_caseinsensitive_renameDebug.app */;
+			productReference = 304BDCB41C67D34300B0BE2F /* IFT3100H16_ClearScreenDebug.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -176,7 +176,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				E4B69B5A0A3A1756003C02F2 /* IFT3100H16_ClearScreen.temp_caseinsensitive_rename */,
+				E4B69B5A0A3A1756003C02F2 /* IFT3100H16_ClearScreen */,
 			);
 		};
 /* End PBXProject section */
@@ -318,7 +318,7 @@
 				INFOPLIST_FILE = "openFrameworks-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_NAME = IFT3100H16_ClearScreen.temp_caseinsensitive_renameDebug;
+				PRODUCT_NAME = IFT3100H16_ClearScreenDebug;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -345,7 +345,7 @@
 				INFOPLIST_FILE = "openFrameworks-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_NAME = IFT3100H16_ClearScreen.temp_caseinsensitive_rename;
+				PRODUCT_NAME = IFT3100H16_ClearScreen;
 				WRAPPER_EXTENSION = app;
 				baseConfigurationReference = E4EB6923138AFD0F00A09F29;
 			};
@@ -363,7 +363,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "IFT3100H16_ClearScreen.temp_caseinsensitive_rename" */ = {
+		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "IFT3100H16_ClearScreen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4B69B600A3A1757003C02F2 /* Debug */,
