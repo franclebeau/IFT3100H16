@@ -24,7 +24,7 @@ typedef enum
 	LINE_RASTERIZER_PO_HAN_LIN
 }   EnumLineRasterMode;
 
-// stucture de primitive vectorielle générique
+// structure de primitive vectorielle générique
 typedef struct
 {
 	int             state;        // 1 * 4 = 4  octets

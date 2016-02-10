@@ -3,7 +3,7 @@
 
 #pragma once
 
-// stucture d'un localisateur de transformation
+// structure d'un localisateur de transformation
 typedef struct
 {
 	int   state;         // 1 * 4 = 4  octets

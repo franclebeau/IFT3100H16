@@ -14,7 +14,7 @@ typedef enum
 	VECTOR_PRIMITIVE_ELLIPSE,
 }   EnumVectorDrawMode;
 
-// stucture de primitive vectorielle générique
+// structure de primitive vectorielle générique
 typedef struct
 {
 	EnumVectorDrawMode type;             	// 1 * 4 = 4  octets
