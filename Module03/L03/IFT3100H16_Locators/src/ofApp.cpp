@@ -17,7 +17,7 @@ void ofApp::setup()
 {
 	ofLog() << "<ofApp::setup>";
 
-	ofSetWindowTitle("1000 localisateurs (keys: arrows, w,e,r,f,any)");
+	ofSetWindowTitle("1000 localisateurs (keys: arrows, w, e, r, f, any)");
 
 	renderer = new Renderer();
 	renderer->setup();
