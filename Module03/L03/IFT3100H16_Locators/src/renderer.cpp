@@ -153,9 +153,9 @@ void Renderer::drawScene()
 		else
 		{
 			// attributs de translation par défaut
-			vectorRotation->x = 0.0f;
-			vectorRotation->y = 0.0f;
-			vectorRotation->z = 0.0f;
+			vectorPosition->x = 0.0f;
+			vectorPosition->y = 0.0f;
+			vectorPosition->z = 0.0f;
 		}
 
 		// assignation des attributs de translation
