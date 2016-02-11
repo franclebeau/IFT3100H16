@@ -33,6 +33,7 @@ void IFT3100H16_VertexBufferCreate(int count)
 		vertexArray[index].color   [0] = /* assigner données du maillage triangulaire */
 		vertexArray[index].color   [1] = /* assigner données du maillage triangulaire */
 		vertexArray[index].color   [2] = /* assigner données du maillage triangulaire */
+		vertexArray[index].color   [3] = /* assigner données du maillage triangulaire */
 	}
 
 	// déclarer un identifiant pour référencer un nouveau buffer de géométrie
