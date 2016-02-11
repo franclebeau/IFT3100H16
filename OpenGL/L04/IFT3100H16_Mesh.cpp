@@ -46,7 +46,7 @@ void IFT3100H16_Mesh()
 			arrayVertex = (Vertex *) calloc(countVertex, sizeof(Vertex));
 
 			// allocation du tableau de triangles
-			arrayTriangle = (Triangle *) calloc(countTriangle, sizeof(Tirangle));
+			arrayTriangle = (Triangle *) calloc(countTriangle, sizeof(Triangle));
 
 			// initialisation des données
 			// ...
