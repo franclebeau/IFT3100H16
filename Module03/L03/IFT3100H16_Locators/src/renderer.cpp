@@ -102,7 +102,7 @@ void Renderer::dispatchRandomLocator(int count, float range)
 
 		// déterminer une dimension uniforme au hasard entre 10% et 200%
 		scale = ofRandom(0.1f, 2.0f);
-		
+
 		vectorDimension->x = scale;
 		vectorDimension->y = scale;
 		vectorDimension->z = scale;
@@ -219,6 +219,7 @@ void Renderer::drawScene()
 void Renderer::drawLocator(float scale)
 {
 	ofFill();
+	ofSetColor(127);
 	ofPushMatrix();
 	ofScale(scale, scale);
 	node->setPosition(0, 0, 0);
