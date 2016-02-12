@@ -17,32 +17,32 @@ Importer une image sous forme de texture.
 Exporter le contenu d'un framebuffer sous forme d'une image.
 
 
-### Leçon #04
+### Leçon #4
 
 Exemple d'une classe minimaliste pour stocker les données des sommets d'un maillage triangulaire.
 
 
-### Leçon #05
+### Leçon #5
 
 Mise à jour des valeurs des attributs d'un intervalle continu de sommets d'un buffer de géométrie
 
 
-### Leçon #06
+### Leçon #6
 
 Création d'un buffer de géométrie.
 
 
-### Leçon #07
+### Leçon #7
 
 Assigner les pointeurs vers chaque attribut de la structure de sommets du buffer de géométrie (pipeline fixe).
 
 
-### Leçon #08
+### Leçon #8
 
 Assigner les pointeurs vers chaque attribut de la structure de sommets du buffer de géométrie (pipeline moderne).
 
 
-### Leçon #09
+### Leçon #9
 
 Exemple de différentes techniques pour rendre un buffer de géométrie :
 1. dessiner un ensemble de points (point sprite)
