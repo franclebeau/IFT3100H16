@@ -15,9 +15,6 @@ void Renderer::setup()
 	// paramètres de rendu
 	ofSetFrameRate(60);
 	ofEnableDepthTest();
-	//ofEnableLighting();
-	//light.setPosition(0, 0, 100);
-	//light.enable();
 
 	// initialisation des variables
 	speed = 100;
