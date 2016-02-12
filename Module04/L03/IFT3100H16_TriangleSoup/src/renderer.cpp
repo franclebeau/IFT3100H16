@@ -8,7 +8,6 @@ Renderer::Renderer(){}
 void Renderer::setup()
 {
 	// paramètres du programme
-
 	triangleCount  = 1000;
 	triangleRadius = 16;
 
@@ -52,7 +51,6 @@ void Renderer::setup()
 void Renderer::draw()
 {
 	ofBackgroundGradient(ofColor(127), ofColor(32));
-	//ofBackground(63);
 
 	// rendre le contenu de la scène
 	drawScene();
@@ -78,7 +76,7 @@ void Renderer::reset()
 	ofLog() << "<reset>";
 }
 
-// fonction qui distribue les triangles dans une hémisphère
+// fonction qui distribue les triangles dans un hémisphère
 void Renderer::dispatchRandomTriangle(int count, float range)
 {
 	// variable temporaire
