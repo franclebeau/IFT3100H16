@@ -56,19 +56,19 @@ void ofApp::keyReleased(int key)
 			renderer->side = 7;
 			ofLog() << "<draw mode: HEPTAGONE>";
 			break;
-		case 54:  // key 5
+		case 54:  // key 6
 			renderer->side = 8;
 			ofLog() << "<draw mode: OCTOGONE>";
 			break;
-		case 55:  // key 5
+		case 55:  // key 7
 			renderer->side = 9;
 			ofLog() << "<draw mode: NONAGONE>";
 			break;
-		case 56:  // key 5
+		case 56:  // key 8
 			renderer->side = 10;
 			ofLog() << "<draw mode: DÉCAGONE>";
 			break;
-		case 57:  // key 5
+		case 57:  // key 9
 			renderer->side = 11;
 			ofLog() << "<draw mode: HENDÉCAGONE>";
 			break;
