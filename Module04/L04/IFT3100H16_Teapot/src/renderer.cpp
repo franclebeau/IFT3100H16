@@ -114,9 +114,9 @@ void Renderer::dispatchRandomLocator(int count, float range)
 		vectorRotation->y = ofRandom(0, 360);
 		vectorRotation->z = 0;
 
-		// déterminer une dimension uniforme au hasard entre 10% et 200%
+		// déterminer une dimension uniforme au hasard entre 5% et 35%
 		scale = ofRandom(0.05f, 0.35f);
-		
+
 		vectorDimension->x = scale;
 		vectorDimension->y = scale;
 		vectorDimension->z = scale;
