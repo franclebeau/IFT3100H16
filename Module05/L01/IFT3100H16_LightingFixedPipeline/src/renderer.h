@@ -14,6 +14,7 @@ class Renderer
 public:
 
 	ofColor * lightAmbient;
+
 	ofLight * lightDirectional;
 	ofLight * lightPoint;
 	ofLight * lightSpot;
@@ -25,7 +26,6 @@ public:
 	ofxAssimpModelLoader * teapot;
 
 	ofQuaternion * orientationDirectional;
-
 	ofQuaternion * orientationSpot;
 
 	ofVec3f * positionCube;
@@ -64,7 +64,6 @@ public:
 	bool isActiveLightSpot;
 
 	bool useSmoothLighting;
-	bool drawNormals;//TODO
 	
 	bool isFlipAxisY;
 

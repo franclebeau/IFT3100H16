@@ -12,11 +12,14 @@ void Renderer::setup()
 	ofSetSphereResolution(32);
 
 	// paramètres
-	cameraOffset = 350;
-	speedMotion = 150;
+	cameraOffset     = 350;
+	speedMotion      = 150;
 	speedOscillation = 7500;
-	xInitial = 0;
-	yInitial = -100;
+	xInitial         = 0;
+	yInitial         = -100;
+	scaleCube        = 100.0f;
+	scaleSphere      = 80.0f;
+	scaleTeapot      = 0.618f;
 
 	// initialisation des variables
 
@@ -27,8 +30,6 @@ void Renderer::setup()
 	zDelta = speedMotion;
 
 	useSmoothLighting = true;
-
-	drawNormals = false;
 
 	isFlipAxisY = false;
 
@@ -47,11 +48,6 @@ void Renderer::setup()
 	// orientations des lumières
 	orientationDirectional = new ofQuaternion();
 	orientationSpot = new ofQuaternion();
-
-	// vecteurs de dimension des géométries
-	scaleCube   = 100.0f;
-	scaleSphere = 80.0f;
-	scaleTeapot = 0.618f;
 
 	// chargement du modèle 3D
 	teapot = new ofxAssimpModelLoader();
@@ -74,9 +70,6 @@ void Renderer::setup()
 
 void Renderer::reset()
 {
-	// activer le zbuffer
-	ofEnableDepthTest();
-
 	// initialisation des variables
 	framebufferWidth  = ofGetWidth();
 	framebufferHeight = ofGetHeight();
@@ -92,42 +85,42 @@ void Renderer::reset()
 
 	// configurer le matériau du cube
 	materialCube->setAmbientColor  (ofColor( 63,  63,  63));
-	materialCube->setDiffuseColor  (ofColor(191,   0,   0));
-	materialCube->setEmissiveColor (ofColor(  0,   0,   7));
-	materialCube->setSpecularColor (ofColor( 31,  31,  31));
-	materialCube->setShininess     (4.0f);
+	materialCube->setDiffuseColor  (ofColor(127,   0,   0));
+	materialCube->setEmissiveColor (ofColor( 31,   0,   0));
+	materialCube->setSpecularColor (ofColor(127, 127, 127));
+	materialCube->setShininess     (16.0f);
 
 	// configurer le matériau de la sphère
-	materialSphere->setAmbientColor  (ofColor( 63,  63, 63));
-	materialSphere->setDiffuseColor  (ofColor(191,  63,  0));
-	materialSphere->setEmissiveColor (ofColor( 15,  15,  0));
-	materialSphere->setSpecularColor (ofColor(255, 255, 64));
+	materialSphere->setAmbientColor  (ofColor( 63,  63,  63));
+	materialSphere->setDiffuseColor  (ofColor(191,  63,   0));
+	materialSphere->setEmissiveColor (ofColor(  0,  31,   0));
+	materialSphere->setSpecularColor (ofColor(255, 255,  64));
 	materialSphere->setShininess     (8.0f);
 
 	// configurer le matériau du teapot
-	materialTeapot->setAmbientColor  (ofColor( 63,  63, 63));
-	materialTeapot->setDiffuseColor  (ofColor(191,   0, 63));
-	materialTeapot->setEmissiveColor (ofColor(  0,  31, 31));
-	materialTeapot->setSpecularColor (ofColor(191, 191, 64));
+	materialTeapot->setAmbientColor  (ofColor( 63,  63,  63));
+	materialTeapot->setDiffuseColor  (ofColor(191,   0,  63));
+	materialTeapot->setEmissiveColor (ofColor(  0,   0,  31));
+	materialTeapot->setSpecularColor (ofColor(191, 191, 191));
 	materialTeapot->setShininess     (8.0f);
 
 	// configurer la lumière ambiante
 	lightAmbient = new ofColor(127, 127, 127);
 
 	// configurer la lumière directionnelle
-	lightDirectional->setDiffuseColor(ofColor(0, 255, 0));
-	lightDirectional->setSpecularColor(ofColor(191, 191, 191));
+	lightDirectional->setDiffuseColor  (ofColor(31,  255,  31));
+	lightDirectional->setSpecularColor (ofColor(191, 191, 191));
 	lightDirectional->setOrientation(ofVec3f(0.0f, 0.0f, 0.0f));
 	lightDirectional->setDirectional();
 
 	// configurer la lumière ponctuelle
-	lightPoint->setDiffuseColor(ofColor(255, 255, 255));
-	lightPoint->setSpecularColor(ofColor(191, 191, 191));
+	lightPoint->setDiffuseColor  (ofColor(255, 255, 255));
+	lightPoint->setSpecularColor (ofColor(191, 191, 191));
 	lightPoint->setPointLight();
 
 	// configurer la lumière projecteur
-	lightSpot->setDiffuseColor(ofColor(255, 255, 255));
-	lightSpot->setSpecularColor(ofColor(191, 191, 191));
+	lightSpot->setDiffuseColor  (ofColor(191, 191, 191));
+	lightSpot->setSpecularColor (ofColor(191, 191, 191));
 	lightSpot->setOrientation(ofVec3f(0.0f, 0.0f, 0.0f));
 	lightSpot->setSpotConcentration(2);
 	lightSpot->setSpotlightCutOff(30);
@@ -158,7 +151,7 @@ void Renderer::update()
 	if(isActiveLightSpot)
 	{
 		// transformer la lumière projecteur
-		oscillation = oscillate(45, speedOscillation, 0, 0,  ofGetElapsedTimeMillis());
+		oscillation = oscillate(ofGetElapsedTimeMillis(), 45, speedOscillation, 0, 0);
 
 		orientationSpot->makeRotate(30, ofVec3f(1, 0, 0), oscillation, ofVec3f(0, 1, 0), 0, ofVec3f(0, 0, 1));
 
@@ -254,6 +247,9 @@ void Renderer::draw()
 			// dessiner une sphère
 			ofDrawSphere(0, 0, 0, scaleSphere);
 
+			// désactiver le matériau
+			materialSphere->end();
+
 			// désactiver les lumières
 			lightingOff();
 
@@ -285,8 +281,14 @@ void Renderer::draw()
 			// activer les lumières
 			lightingOn();
 
+			// activer le matériau
+			materialTeapot->begin();
+
 			// dessiner un teapot
 			teapot->draw(OF_MESH_FILL);
+
+			// désactiver le matériau
+			materialTeapot->end();
 
 			// désactiver les lumières
 			lightingOff();
@@ -320,6 +322,7 @@ void Renderer::lightingOn()
 // activation des lumières dynamiques
 void Renderer::lightingOff()
 {
+	ofSetGlobalAmbientColor(ofColor(0, 0, 0));
 	lightDirectional->disable();
 	lightPoint->disable();
 	lightSpot->disable();

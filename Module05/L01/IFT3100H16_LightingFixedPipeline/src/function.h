@@ -18,7 +18,7 @@ inline void imageExport(const string name, const string extension)
 	ofLog() << "<export image: " << fileName << ">";
 }
 
-inline float oscillate(float amplitude, float period, float shift, float offset, float time)
+inline float oscillate(float time, float amplitude, float period, float shift, float offset)
 {
 	return amplitude * sin((time - shift) * 2 * PI / period) + offset;
 }

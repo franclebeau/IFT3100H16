@@ -17,7 +17,7 @@ void ofApp::setup()
 {
 	ofLog() << "<ofApp::setup>";
 
-	ofSetWindowTitle("éclairage dynamique (pipeline moderne) [uplr, 1-4, f, s, v]");
+	ofSetWindowTitle("éclairage dynamique (pipeline moderne) [uplr, 1-4, f, r, s, v]");
 
 	renderer = new Renderer();
 	renderer->setup();
