@@ -40,8 +40,3 @@ Exemples d’accès aux composantes d’une matrice en GLSL.
 ### Leçon #8
 
 Exemples de fonctions applicables aux variables de type matrice en GLSL.
-
-
-### Leçon #9
-
-Exemple d'éclairage de type lumière projecteur, évalué au niveau d'un shader de fragments.
